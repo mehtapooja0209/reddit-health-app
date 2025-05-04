@@ -5,8 +5,8 @@ import json
 # Download data from Google Drive
 @st.cache_data
 def load_data():
-    file_id = "https://drive.google.com/file/d/1gNcVIQMJMRvbm8d5yR2DsmVdh1vBAnCq/view?usp=drive_link"  # Replace with your ID
-    url = f"https://drive.google.com/uc?id={file_id}"
+    file_id = "1gNcVIQMJMRvbm8d5yR2DsmVdh1vBAnCq" # Replace with your ID
+    url = f"https://drive.google.com/uc?id={1gNcVIQMJMRvbm8d5yR2DsmVdh1vBAnCq}"
     output = "endo_data.json"
     gdown.download(url, output, quiet=True)
     
